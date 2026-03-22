@@ -1,9 +1,7 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:1a0533,30:2d1b69,60:4c1d95,100:6d28d9&height=220&section=header&text=Vijaya%20Raghavendra&fontSize=48&fontColor=ede9fe&fontAlignY=40&desc=Data%20Analyst%20%7C%20Healthcare%20%26%20Enterprise%20Analytics&descColor=a78bfa&descSize=18&descAlignY=62&animation=fadeIn" width="100%"/>
-
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:1a0533,30:2d1b69,60:4c1d95,100:6d28d9&height=220&section=header&text=Vijaya%20Raghavendra&fontSize=48&fontColor=ede9fe&fontAlignY=40&desc=Data%20Analyst%20|%20Healthcare%20and%20Enterprise%20Analytics&descSize=18&descAlignY=62&animation=fadeIn" width="100%"/>
 </div>
-
 <!-- ═══════ OPEN TO WORK ═══════ -->
 <div align="center">
 
@@ -19,7 +17,7 @@
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect%20with%20me-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/your-link-here)
 [![Gmail](https://img.shields.io/badge/Email-Reach%20Out-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:vijayraghavendra300@gmail.com)
-[![Location](https://img.shields.io/badge/📍-Mount%20Pleasant%2C%20MI%20·%20Open%20to%20Remote-4c1d95?style=for-the-badge)](mailto:vijayraghavendra300@gmail.com)
+[![Location](https://img.shields.io/badge/📍-Mount%20Pleasant%2C%20MI%20·%20Open%20to%20Relocate-4c1d95?style=for-the-badge)](mailto:vijayraghavendra300@gmail.com)
 
 </div>
 
@@ -50,7 +48,7 @@ analyst = {
 
     "seeking"   : "Data Analyst · BI Analyst · "
                   "Analytics Engineer",
-    "available" : "✅ Immediately",
+    "available" : "✅ In 1 Week",
 }
 
 print("Let's turn your data chaos into clarity.")
