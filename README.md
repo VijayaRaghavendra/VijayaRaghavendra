@@ -1,172 +1,226 @@
+<!-- ═══════════════════════════════════════════════════════════════════ -->
+<!--   VIJAYA RAGHAVENDRA — GitHub Profile README                       -->
+<!--   Theme: Data Analyst · Precise · Actively Open to Work           -->
+<!-- ═══════════════════════════════════════════════════════════════════ -->
+
 <div align="center">
 
-<!-- Dynamic Header Banner -->
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:0f2027,50:203a43,100:2c5364&height=200&section=header&text=Vijaya%20Raghavendra&fontSize=52&fontColor=ffffff&fontAlignY=38&desc=Data%20Analyst%20%7C%20Healthcare%20Analytics%20%7C%20ML%20Engineer&descColor=90cdf4&descAlignY=58&animation=fadeIn"/>
+```
+╔══════════════════════════════════════════════════════════════════════╗
+║                                                                      ║
+║   SELECT  name, role, status  FROM  analysts  WHERE  impact > 0;    ║
+║                                                                      ║
+║   ─────────────────────────────────────────────────────────────      ║
+║   name   →  Vijaya Raghavendra Adusumilli                           ║
+║   role   →  Data Analyst · Healthcare & Enterprise Analytics        ║
+║   status →  ✅  ACTIVELY OPEN TO NEW OPPORTUNITIES                  ║
+║                                                                      ║
+╚══════════════════════════════════════════════════════════════════════╝
+```
 
-<!-- Typing SVG -->
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=38BDF8&center=true&vCenter=true&width=700&lines=Turning+Raw+Data+into+Real+Decisions;Healthcare+%26+Enterprise+Analytics+Specialist;SQL+%7C+Python+%7C+Power+BI+%7C+Azure+%7C+Snowflake;Building+Predictive+Models+that+Matter)](https://git.io/typing-svg)
+<!-- Open to work — eye-catching for recruiters -->
+<a href="mailto:vijayraghavendra300@gmail.com">
+  <img src="https://img.shields.io/badge/%F0%9F%9F%A2%20OPEN%20TO%20WORK-Data%20Analyst%20%7C%20Healthcare%20%7C%20BI%20%7C%20ML-2ea44f?style=for-the-badge&labelColor=0d1117"/>
+</a>
+
+<br/><br/>
+
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=18&pause=1200&color=38BDF8&center=true&vCenter=true&width=680&lines=3%2B+years+turning+healthcare+data+into+decisions;Advanced+SQL+%7C+Python+%7C+Power+BI+%7C+Azure+%7C+Snowflake;Building+ETL+pipelines+%26+predictive+models;HIPAA-compliant+analytics+at+scale;M.S.+Information+Systems+—+Central+Michigan+University)](https://git.io/typing-svg)
 
 <br/>
 
-<!-- Badges Row -->
-![Profile Views](https://komarev.com/ghpvc/?username=vijayraghavendra&color=38bdf8&style=flat-square&label=Profile+Views)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0077B5?style=flat-square&logo=linkedin&logoColor=white)](https://linkedin.com)
-[![Email](https://img.shields.io/badge/Email-vijayraghavendra300%40gmail.com-D14836?style=flat-square&logo=gmail&logoColor=white)](mailto:vijayraghavendra300@gmail.com)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://linkedin.com)
+[![Email](https://img.shields.io/badge/Email-vijayraghavendra300@gmail.com-EA4335?style=flat-square&logo=gmail&logoColor=white)](mailto:vijayraghavendra300@gmail.com)
+[![Location](https://img.shields.io/badge/Location-Mount%20Pleasant%2C%20MI-6B7280?style=flat-square&logo=googlemaps&logoColor=white)]()
+[![Available](https://img.shields.io/badge/Available-Immediately-2ea44f?style=flat-square)]()
 
 </div>
 
 ---
 
-## 👨‍💻 About Me
+## `$ whoami`
 
-```python
-analyst = {
-    "name"        : "Vijaya Raghavendra Adusumilli",
-    "role"        : "Data Analyst — Healthcare & Enterprise Analytics",
-    "experience"  : "3+ years",
-    "location"    : "Mount Pleasant, MI 🇺🇸",
-    "education"   : "M.S. Information Systems (Business Data Analytics) — Central Michigan University",
-    "focus_areas" : ["Healthcare Analytics", "ETL Engineering", "Predictive Modeling", "BI Dashboards"],
-    "currently"   : "Building AI-assisted analytics pipelines @ CitiusTech",
-    "fun_fact"    : "I once recovered $1.2M in claim leakage with a root-cause SQL query 🎯"
+```yaml
+# ── Vijaya Raghavendra Adusumilli ─────────────────────────────────────
+profile:
+  currently_at   : "Data Analyst @ CitiusTech  (Aug 2025 – Present)"
+  previously_at  : "Data Analyst @ Persistent Systems  (Jul 2021 – Dec 2023)"
+  education      : "M.S. Information Systems (Business Data Analytics)"
+                   "Central Michigan University · Jan 2024 – Dec 2025"
+  based_in       : "Mount Pleasant, MI  ·  Relocatable  ·  Open to Remote"
+  seeking        : ["Data Analyst", "BI Analyst",
+                    "Healthcare Analytics Analyst", "Analytics Engineer"]
+
+why_hire_me:
+  - "Translate 5M+ row healthcare datasets into executive-ready narratives"
+  - "Build ETL pipelines that cut data latency from 24 hrs → 2 hrs"
+  - "Design Power BI / Tableau dashboards adopted by 200+ end users"
+  - "Apply ML (regression, classification, forecasting) to real ops problems"
+  - "Write HIPAA-compliant SQL that uncovered $1.2M in annual claim leakage"
+
+what_makes_me_different: |
+  I don't just run queries — I ask the right question first.
+  I've sat across the table from healthcare ops teams, claims units,
+  and C-suite leaders. I know how to speak both languages:
+  technical precision AND stakeholder clarity.
+```
+
+---
+
+## `$ ls ./skills --verbose`
+
+<table>
+<tr>
+<td valign="top" width="50%">
+
+**🔍 Analysis & Querying**
+```
+Advanced SQL          ████████████  Expert
+Python  (Pandas/NumPy)████████████  Expert
+Scikit-learn          ███████████░  Advanced
+DAX / M Query         ███████████░  Advanced
+R (basics)            ██████░░░░░░  Familiar
+```
+
+**📊 BI & Visualization**
+```
+Power BI + DAX        ████████████  Expert
+Tableau               ███████████░  Advanced
+Excel (Adv + VBA)     ███████████░  Advanced
+Matplotlib / Seaborn  ███████████░  Advanced
+Looker                ████████░░░░  Proficient
+```
+
+</td>
+<td valign="top" width="50%">
+
+**☁️ Cloud & Data Engineering**
+```
+Azure (ADF + Synapse)  ███████████░  Advanced
+Snowflake              ██████████░░  Advanced
+dbt (data build tool)  ████████░░░░  Proficient
+Google BigQuery        █████████░░░  Proficient
+Apache Airflow         ███████░░░░░  Proficient
+AWS Redshift / S3      ████████░░░░  Proficient
+```
+
+**🤖 ML & AI Analytics**
+```
+Regression / Class.    ██████████░░  Advanced
+Time Series (ARIMA)    █████████░░░  Proficient
+Snowflake Cortex       ████████░░░░  Proficient
+LangChain / OpenAI     ███████░░░░░  Growing
+SHAP Explainability    ███████░░░░░  Growing
+```
+
+</td>
+</tr>
+</table>
+
+**Healthcare Domain:** `Claims Adjudication` · `Denial Management` · `HIPAA Compliance` · `Revenue Cycle` · `Fraud Detection` · `SLA Monitoring` · `Clinical KPIs`
+
+**Practices:** `Git` · `Agile / Scrum` · `JIRA` · `RBAC` · `Data Governance` · `A/B Testing` · `Root Cause Analysis` · `Data Observability`
+
+---
+
+## `$ cat ./featured_project.json`
+
+<div align="center">
+
+```json
+{
+  "project" : "Predictive Readmission Risk",
+  "tagline" : "Can we predict 30-day readmissions before the patient leaves the bed?",
+  "answer"  : "Yes — with 0.84 AUC-ROC and SHAP-driven clinical explainability."
 }
 ```
 
-> Results-driven analyst who bridges the gap between **complex healthcare datasets** and **clear business decisions** — using SQL, Python, Power BI, and a good dose of ML where it counts.
-
----
-
-## 🛠️ Tech Stack
-
-<div align="center">
-
-### 🔍 Languages & Querying
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![SQL](https://img.shields.io/badge/Advanced%20SQL-CC2927?style=for-the-badge&logo=microsoftsqlserver&logoColor=white)
-![R](https://img.shields.io/badge/R-276DC3?style=for-the-badge&logo=r&logoColor=white)
-![DAX](https://img.shields.io/badge/DAX-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)
-
-### 📊 BI & Visualization
-![Power BI](https://img.shields.io/badge/Power%20BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)
-![Tableau](https://img.shields.io/badge/Tableau-E97627?style=for-the-badge&logo=tableau&logoColor=white)
-![Looker](https://img.shields.io/badge/Looker-4285F4?style=for-the-badge&logo=looker&logoColor=white)
-![Excel](https://img.shields.io/badge/Excel%20Advanced-217346?style=for-the-badge&logo=microsoftexcel&logoColor=white)
-
-### ☁️ Cloud & Data Platforms
-![Azure](https://img.shields.io/badge/Microsoft%20Azure-0089D6?style=for-the-badge&logo=microsoftazure&logoColor=white)
-![Snowflake](https://img.shields.io/badge/Snowflake-29B5E8?style=for-the-badge&logo=snowflake&logoColor=white)
-![BigQuery](https://img.shields.io/badge/BigQuery-4285F4?style=for-the-badge&logo=googlebigquery&logoColor=white)
-![AWS](https://img.shields.io/badge/AWS%20Redshift-FF9900?style=for-the-badge&logo=amazonaws&logoColor=white)
-
-### ⚙️ Data Engineering & ETL
-![Azure Data Factory](https://img.shields.io/badge/Azure%20Data%20Factory-0089D6?style=for-the-badge&logo=microsoftazure&logoColor=white)
-![dbt](https://img.shields.io/badge/dbt-FF694B?style=for-the-badge&logo=dbt&logoColor=white)
-![Apache Airflow](https://img.shields.io/badge/Apache%20Airflow-017CEE?style=for-the-badge&logo=apacheairflow&logoColor=white)
-
-### 🤖 Machine Learning & AI
-![Scikit-learn](https://img.shields.io/badge/Scikit--learn-F7931E?style=for-the-badge&logo=scikitlearn&logoColor=white)
-![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)
-![NumPy](https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white)
-![OpenAI](https://img.shields.io/badge/OpenAI%20API-412991?style=for-the-badge&logo=openai&logoColor=white)
-
 </div>
 
----
+> **The Problem:** Hospitals lose millions annually on preventable 30-day readmissions. The question is — can the data tell us *who* to flag before discharge?
 
-## 🚀 Featured Project
-
-<div align="center">
-
-### 🏥 Predictive Readmission Risk — Clinical ML Pipeline
-
-</div>
-
-> **Can we predict which patients will be readmitted within 30 days — before they're even discharged?**
-
-A production-grade machine learning pipeline designed to identify **high-risk patients** for 30-day hospital readmission, enabling clinical teams to intervene proactively and reduce preventable readmissions.
+**What I built:** An end-to-end ML pipeline ingesting structured EHR data (diagnoses, procedures, labs, vitals, discharge codes) to predict high-risk patients — with results surfaced in a real-time Power BI clinical dashboard.
 
 ```
-📦 Predictive Readmission Risk
- ┣ 📂 data_ingestion        → EHR & claims data pipelines (Azure Data Factory + Snowflake)
- ┣ 📂 feature_engineering   → Diagnosis codes, LOS, prior visits, comorbidity scoring
- ┣ 📂 modeling              → Logistic Regression, Random Forest, XGBoost ensemble
- ┣ 📂 evaluation            → ROC-AUC, Precision-Recall, SHAP explainability
- ┣ 📂 deployment            → Streamlit dashboard + Power BI integration
- ┗ 📂 compliance            → HIPAA-compliant anonymization & RBAC controls
+Data Sources           Feature Engineering           Modeling Stack
+─────────────          ───────────────────           ──────────────────────
+EHR records     ──►    Charlson Comorbidity    ──►   Logistic Regression
+Claims data            Index scoring                 Random Forest
+Lab results            Prior admission frequency     XGBoost (ensemble)
+Discharge codes        Length of stay (LOS)          SHAP explainability
+Vitals history         Diagnosis code grouping
+                       Discharge disposition
 ```
 
-**🔬 What it does:**
-- Ingests structured EHR data (diagnoses, procedures, labs, vitals) and claims records from Snowflake
-- Engineers 40+ clinical and operational features including **Charlson Comorbidity Index**, prior admission frequency, and discharge disposition
-- Trains an **XGBoost + Logistic Regression ensemble** model achieving **AUC-ROC of 0.84** on held-out validation sets
-- Uses **SHAP values** to surface the top risk drivers per patient — making predictions *explainable* for clinicians, not just accurate
-- Outputs a **Power BI risk dashboard** flagging high-risk patients pre-discharge, with real-time score refresh on new admissions
-- Fully HIPAA-compliant with data masking on PHI fields and role-based access controls across the pipeline
-
-**🛠️ Stack:** `Python` · `Scikit-learn` · `XGBoost` · `SHAP` · `Snowflake` · `Azure Data Factory` · `dbt` · `Power BI` · `Streamlit`
-
----
-
-## 📈 What I Bring to the Table
-
-| Area | What I Do |
+| Metric | Result |
 |---|---|
-| 🔎 **Analytics** | EDA, A/B Testing, Hypothesis Testing, Root Cause Analysis on 5M+ row datasets |
-| 🏗️ **Data Engineering** | ETL pipeline design with ADF, dbt, Airflow — reduced data latency from 24hrs → 2hrs |
-| 📊 **BI & Reporting** | 15+ executive dashboards in Power BI & Tableau tracking KPIs across claims & operations |
-| 🤖 **ML & Forecasting** | Time-series (ARIMA, Prophet), classification, regression — improved planning accuracy by ~22% |
-| 🏥 **Healthcare Domain** | Claims adjudication, denial management, HIPAA compliance, fraud detection, reimbursement analysis |
-| ⚡ **AI-Assisted Analytics** | LLM-powered SQL generation (Snowflake Cortex), NL-to-SQL assistants, GenAI report summarization |
+| Model AUC-ROC | **0.84** on held-out validation set |
+| Explainability | SHAP values surface top risk factors *per patient* |
+| Dashboard | Power BI clinical scorecard · real-time score refresh |
+| Compliance | HIPAA-compliant · PHI masking · RBAC across full pipeline |
+| Clinical impact | Risk flag delivered before discharge — enabling proactive intervention |
+
+**Stack:** `Python` · `XGBoost` · `Scikit-learn` · `SHAP` · `Snowflake` · `Azure Data Factory` · `dbt` · `Power BI` · `Streamlit`
 
 ---
 
-## 📊 GitHub Stats
-
-<div align="center">
-
-<img height="180em" src="https://github-readme-stats.vercel.app/api?username=vijayraghavendra&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true&hide_border=true"/>
-<img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=vijayraghavendra&layout=compact&langs_count=8&theme=tokyonight&hide_border=true"/>
-
-</div>
-
-<div align="center">
-
-[![GitHub Streak](https://streak-stats.demolab.com?user=vijayraghavendra&theme=tokyonight&hide_border=true)](https://git.io/streak-stats)
-
-</div>
-
----
-
-## 🌐 Domain Expertise
+## `$ grep -r "impact" ./experience/`
 
 ```
-Healthcare Analytics          ████████████████████  Expert
-SQL & Query Optimization      ████████████████████  Expert
-Power BI / Tableau            ████████████████░░░░  Advanced
-Python (Pandas, Sklearn)      ███████████████░░░░░  Advanced
-Cloud Platforms (Azure, SF)   ██████████████░░░░░░  Advanced
-ETL / Data Engineering        ████████████░░░░░░░░  Proficient
-Machine Learning              ███████████░░░░░░░░░  Proficient
-GenAI / LLM Integration       █████████░░░░░░░░░░░  Growing
+CitiusTech  ·  Data Analyst  (Aug 2025 – Present)
+├── 20+ KPI dashboards    →  SLA breach risk flagged 48 hrs ahead of threshold
+├── Predictive analytics  →  ~22% improvement in capacity planning accuracy
+├── Python automation     →  35% reduction in manual reporting effort
+│                            Weekly cadence compressed to daily
+└── AI-assisted SQL       →  Snowflake Cortex + GitHub Copilot in production
+
+Persistent Systems  ·  Data Analyst  (Jul 2021 – Dec 2023)
+├── ETL pipelines         →  Data latency cut from 24 hrs → 2 hrs across 6 systems
+├── Root cause analysis   →  $1.2M annual claim leakage identified & recovered
+├── Denial rate reduction →  18% drop in recurring claim errors
+├── Data quality          →  99.4% compliance score across monthly HIPAA audits
+├── Dashboard adoption    →  15+ Power BI / Tableau dashboards · 200+ end users
+└── Report automation     →  20+ hours/month of manual work eliminated via VBA + SQL
 ```
 
 ---
 
-## 💡 Philosophy
+## `$ cat ./what_i_am_looking_for.md`
 
-> *"Data without context is noise. Analytics without action is art. The goal is always the decision at the end."*
+I'm **actively interviewing** for roles where I can do meaningful analytics work.
+Ideally in healthcare, but open to enterprise, fintech, or any data-rich domain.
 
-I believe the best data analysts aren't just technical — they're translators. I translate messy healthcare data into stories that executives can act on, operations teams can trust, and patients ultimately benefit from.
+**I do my best work when:**
+- The data is messy, the stakes are real, and stakeholders need clarity fast
+- I'm building pipelines and dashboards that people rely on every single day
+- There's room to apply ML where it genuinely solves a business problem
+- The team values accuracy, communication, and clean code in equal measure
+
+**Target roles:** Data Analyst · BI Analyst · Healthcare Analytics · Analytics Engineer
+
+**Available:** Immediately · Michigan-based · Open to remote / hybrid / relocation
+
+📩 **Let's talk →** [vijayraghavendra300@gmail.com](mailto:vijayraghavendra300@gmail.com) · [LinkedIn](https://linkedin.com)
+
+---
+
+## `$ echo $PHILOSOPHY`
+
+```
+"The best data analyst in the room isn't the one who knows
+ the most SQL — it's the one who asks the question nobody
+ thought to ask, then finds the answer buried in the data."
+
+  > 3 years of doing exactly that in healthcare analytics.
+  > Next: Finding a team that needs that mindset.
+```
 
 ---
 
 <div align="center">
 
-**📬 Let's connect and build something meaningful with data.**
+**`-- Open to connections, conversations, and the right opportunity --`**
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com)
-[![Email](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:vijayraghavendra300@gmail.com)
-
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:2c5364,50:203a43,100:0f2027&height=120&section=footer"/>
+<img src="https://komarev.com/ghpvc/?username=vijayraghavendra&color=38bdf8&style=flat-square&label=Profile+Views"/>
 
 </div>
