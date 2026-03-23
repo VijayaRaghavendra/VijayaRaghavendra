@@ -2,6 +2,7 @@
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:1a0533,30:2d1b69,60:4c1d95,100:6d28d9&height=220&section=header&text=Vijaya%20Raghavendra&fontSize=48&fontColor=ede9fe&fontAlignY=40&desc=Data%20Analyst%20|%20Healthcare%20and%20Enterprise%20Analytics&descSize=18&descAlignY=62&animation=fadeIn" width="100%"/>
 </div>
+
 <!-- ═══════ OPEN TO WORK ═══════ -->
 <div align="center">
 
@@ -116,38 +117,92 @@ print("Let's turn your data chaos into clarity.")
 
 <!-- ═══════ FEATURED PROJECT ═══════ -->
 
-## 🚀 Featured Project — Predictive Readmission Risk
+## 🚀 Featured Project — Predictive Hospital Readmission Risk
 
 <div align="center">
 
-[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=VijayaRaghavendra&repo=predictive-readmission-risk&theme=tokyonight&bg_color=0d001a&title_color=a78bfa&icon_color=7c3aed&text_color=ede9fe&border_color=4c1d95)](https://github.com/VijayaRaghavendra/predictive-readmission-risk)
+[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=VijayaRaghavendra&repo=predictive-hospital-readmission-risk-ml-powerbi&theme=tokyonight&bg_color=0d001a&title_color=a78bfa&icon_color=7c3aed&text_color=ede9fe&border_color=4c1d95)](https://github.com/VijayaRaghavendra/predictive-hospital-readmission-risk-ml-powerbi)
 
 </div>
 
-> **"Can we predict which patients will be readmitted within 30 days — before they're discharged?"**
+> **"Can we predict which Medicare patients will be readmitted within 30 days — before they're discharged — and tell the care team exactly what to do about it?"**
 
-A production-grade ML pipeline that ingests structured EHR data, engineers 40+ clinical features, and scores every patient's readmission risk before discharge — enabling proactive clinical intervention.
+A production-grade end-to-end ML pipeline built on **58,066 real CMS SynPUF Medicare claims (2015–2023)**. The system engineers 27 clinical features from raw ICD-10 diagnoses and claims data, trains an XGBoost gradient boosting model using a strict temporal split, scores every patient's 30-day readmission risk at discharge, and surfaces actionable insights across a **5-page interactive Power BI Command Centre** used by executives, clinicians, finance teams, and operations managers.
 
 ```
-  EHR + Claims Data           Feature Engineering            Model Pipeline
-  ─────────────────           ───────────────────            ──────────────
-  Diagnoses (ICD codes) ──►   Charlson Comorbidity  ──►     Logistic Regression
-  Lab results                 Index (CCI)                    Random Forest
-  Prior admissions            Admission frequency            XGBoost Ensemble ◄── Winner
-  Discharge codes             Length of stay (LOS)
-  Vitals & procedures         Discharge disposition          SHAP Explainability
-                              Diagnosis code groups          → Top risk factors per patient
+  CMS Claims Data               Feature Engineering              ML Pipeline
+  ───────────────               ───────────────────              ───────────
+  ICD-10 diagnoses   ──►  Comorbidity flags (6 conditions) ──►  HistGradientBoostingClassifier
+  Inpatient claims         Frailty Score composite               (XGBoost hist-equivalent)
+  Beneficiary data         CHF×CKD interaction term
+  Discharge codes          LOS clinical bins (0/1/2)             Temporal 3-way split:
+  Revenue centre           Cyclical month encoding               Train  2015–2021  ~47K rows
+  Admission type           DRG grouping + dummies                Val    2022        ~7K rows
+  Prior admits             Weekend admit flag                    Test   2023        1,863 rows
+  Charge amounts           Social risk (dual-eligible)           ← LOCKED, never seen
+                           REV_CNTR_IS_450 binary
+                                                                 Permutation Importance
+                                                                 (15-repeat, SHAP-equivalent)
+                                                                 → Top 15 risk drivers
 ```
 
-| 📐 Metric | 🎯 Result |
-|:---|:---|
-| Model AUC-ROC | **0.84** on held-out validation |
-| Explainability | SHAP values — top risk drivers surfaced *per patient* |
-| Clinical Output | Power BI risk scorecard with real-time refresh on new admissions |
-| Compliance | HIPAA-compliant · PHI masking · RBAC across full pipeline |
-| Business Impact | Clinicians receive risk flag *before* patient discharge |
+### 📐 Model Performance & Results
 
-**`Python`** · **`XGBoost`** · **`Scikit-learn`** · **`SHAP`** · **`Snowflake`** · **`Azure Data Factory`** · **`dbt`** · **`Power BI`** · **`Streamlit`**
+| Metric | Result | Detail |
+|:-------|:-------|:-------|
+| **Dataset** | 58,066 patients · 82 features | CMS Medicare SynPUF 2015–2023 |
+| **Target Base Rate** | 56.7% positive | Class imbalance handled via `scale_pos_weight` |
+| **Data Split** | Temporal — not random | Train:2015–21 · Val:2022 · Test:2023 |
+| **Top Feature** | `LOS_DAYS` Δ AUC = 0.186 | LOS=0 (same-day) → 77% readmit probability |
+| **Key Discovery** | Revenue Centre Code corr = 0.612 | Verified non-leakage — assigned at admission |
+| **Model Lift @ 40%** | 68% of readmissions captured | 70% more efficient than random outreach |
+| **Cost Paradox** | Critical tier avg charge: $2,279 | Lowest charge, highest risk — 92.7% readmit rate |
+| **Preventable Savings** | $214M identified | Critical tier alone (50% intervention success) |
+
+### 🎯 Risk Tier System
+
+| Tier | Score Range | Patients | Readmit Rate | Action |
+|:-----|:-----------|:---------|:-------------|:-------|
+| 🔴 Critical | 0.72 – 1.00 | 30,836 | **92.7%** | Same-day discharge coordinator · Immediate care transition |
+| 🟠 High | 0.55 – 0.72 | 3,804 | **64.7%** | 48-hr post-discharge call · Medication reconciliation |
+| 🟡 Moderate | 0.35 – 0.55 | ~14K | ~35% | 7-day follow-up · Social work if dual-eligible |
+| 🟢 Low | 0.00 – 0.35 | ~9K | <35% | Standard discharge · Routine 30-day check-in |
+
+### 🔑 Top Clinical Findings
+
+- **LOS=0 paradox:** Same-day Emergency discharges (30,836 patients) carry **77% readmission probability** — the largest preventable cohort, yet lowest avg charge ($2,279). They leave before being stabilised.
+- **Alzheimer's** (86.44% readmit) and **CKD** (80.38% readmit) are the strongest comorbidity drivers — both far outpace Diabetes (69.56%) despite Diabetes affecting 74% of the cohort.
+- **Monday discharges** carry a 63.4% readmit rate — highest of any day — due to weekend admissions under reduced specialist coverage.
+- **Dual-eligible patients** (14,400) carry validated social determinant risk: limited transport, medication non-adherence, housing instability.
+- **Frailty Score ≥ 3** (age ≥80 + ≥4 comorbidities + Alzheimer's) → 87.51% readmit rate.
+
+### 📊 Power BI Command Centre — 5 Pages
+
+| Page | Audience | Key Content |
+|:-----|:---------|:------------|
+| **1 — Executive Overview** | C-Suite / Leadership | KPI tiles · Readmission trend 2015–2023 · Risk tier donut · Admission type breakdown |
+| **2 — Clinical Drivers** | Clinicians / Quality Teams | Comorbidity matrix · ML feature importance (Δ AUC) · LOS vs risk scatter · Age pyramid |
+| **3 — Financial Impact** | CFO / Revenue Cycle | Cost paradox visual · Tier-by-tier charge vs readmit · $214M savings opportunity |
+| **4 — Doctor's View** | Physicians / Discharge Planners | Patient-level risk card · Score · Tier · Comorbidities · LOS · Recommended action |
+| **5 — Manager's View** | Operations / Care Coordinators | 5 intervention programmes · ROI estimates · Model lift curve · $69M–$116M saving |
+
+### ⚙️ Production Scoring (EHR-Ready)
+
+```python
+# Score a new patient at discharge — structured output for EHR API integration
+patient = {
+    "CC_CKD": 1, "CC_COUNT": 3, "AGE": 78,
+    "PRIOR_12M_ADMITS": 12, "CLM_TOT_CHRG_AMT": 8500,
+    "CLM_IP_ADMSN_TYPE_CD": 1,   # 1 = Emergency
+    "LOS_DAYS": 0, "LOS_CAT": 0, "FRAILTY_SCORE": 3,
+    "REV_CNTR_IS_450": 1,
+}
+result = score_new_patient(patient)
+# → {'risk_score': 0.8341, 'risk_tier': 'Critical',
+#    'alert_flag': True, 'top_concern': 'LOS_DAYS'}
+```
+
+**`Python`** · **`scikit-learn (HistGradientBoosting / XGBoost)`** · **`Pandas`** · **`NumPy`** · **`Matplotlib`** · **`Seaborn`** · **`Power BI`** · **`CMS SynPUF`** · **`Permutation Importance`** · **`Pickle / JSON`**
 
 ---
 
@@ -164,8 +219,8 @@ A production-grade ML pipeline that ingests structured EHR data, engineers 40+ c
 
 | 🎯 | 📉 | ✅ | 🏥 |
 |:---:|:---:|:---:|:---:|
-| **0.84 AUC-ROC** | **18%** | **99.4%** | **5M+** |
-| Readmission risk model on held-out validation set | Reduction in recurring claim errors after RCA | Data quality score across monthly HIPAA compliance audits | Healthcare records analyzed across claims, eligibility & provider data |
+| **$214M** | **70%** | **99.4%** | **5M+** |
+| Preventable readmission costs identified in ML project | More efficient outreach vs random — model lift at 40% threshold | Data quality score across monthly HIPAA compliance audits | Healthcare records analyzed across claims, eligibility & provider data |
 
 </div>
 
