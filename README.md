@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:1a0533,30:2d1b69,60:4c1d95,100:6d28d9&height=220&section=header&text=Vijaya%20Adusumilli&fontSize=48&fontColor=ede9fe&fontAlignY=40&desc=Data%20Engineering%20|%20Fintech%20and%20Investment%20Banking%20Analytics&descSize=18&descAlignY=62&animation=fadeIn" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:1a0533,30:2d1b69,60:4c1d95,100:6d28d9&height=220&section=header&text=Adusumilli%20Vijaya&fontSize=48&fontColor=ede9fe&fontAlignY=40&desc=Data%20Engineering%20|%20Fintech%20and%20Investment%20Banking%20Analytics&descSize=18&descAlignY=62&animation=fadeIn" width="100%"/>
 </div>
 
 
@@ -33,7 +33,7 @@
 
 ```python
 engineer = {
-    "name"      : "Vijaya Raghavendra Adusumilli",
+    "name"      : "Adusumilli Vijaya",
     "role"      : "Data Engineer",
     "focus"     : ["Scalable ETL Pipelines",
                    "Real-Time Streaming Systems",
@@ -315,7 +315,7 @@ result = score_new_patient(patient)
 ║    they build systems that make the right data available         ║
 ║    to the right person at exactly the right moment."             ║
 ║                                                                  ║
-║                                        — Vijaya Adusumilli       ║
+║                                        — Adusumilli Vijaya       ║
 ╚══════════════════════════════════════════════════════════════════╝
 ```
 
